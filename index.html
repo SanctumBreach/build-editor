@@ -1,0 +1,109 @@
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<script src="js/jquery-3.4.1.min.js"></script> 
+	<script src="js/data/tree.js"></script>
+	<script src="js/data/PassiveTree.js"></script>
+	<script src="js/editor.js"></script>
+	<link rel="stylesheet" href="OffensiveTree.css">
+	<link rel="stylesheet" href="Main.css">
+	<script>
+		//Make the DIV element draggagle:
+		
+
+		function dragElement(elmnt) {
+		  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+		  if (document.getElementById(elmnt.id + "header")) {
+			/* if present, the header is where you move the DIV from:*/
+			document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+		  } else {
+			/* otherwise, move the DIV from anywhere inside the DIV:*/
+			elmnt.onmousedown = dragMouseDown;
+		  }
+
+		  function dragMouseDown(e) {
+			e = e || window.event;
+			e.preventDefault();
+			// get the mouse cursor position at startup:
+			pos3 = e.clientX;
+			pos4 = e.clientY;
+			document.onmouseup = closeDragElement;
+			// call a function whenever the cursor moves:
+			document.onmousemove = elementDrag;
+		  }
+
+		  function elementDrag(e) {
+			e = e || window.event;
+			e.preventDefault();
+			// calculate the new cursor position:
+			pos1 = pos3 - e.clientX;
+			pos2 = pos4 - e.clientY;
+			pos3 = e.clientX;
+			pos4 = e.clientY;
+			// set the element's new position:
+			elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+			elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+		  }
+
+		  function closeDragElement() {
+			/* stop moving when mouse button is released:*/
+			document.onmouseup = null;
+			document.onmousemove = null;
+		  }
+		}
+		
+		function toggleContainer() {
+			$("#masteryContainer").toggle();
+			$("#PassiveTreeContainer").toggle();
+			var containerButton = $("#toggleContainerButton");
+			if (containerButton.text() === "View Passive Tree") {
+				containerButton.text = "View masteries";
+			} else {
+				containerButton.text = "View Passive Tree";
+			}
+		}
+		</script>
+	<script>
+		$(document).ready(function(){
+			//hi you are currently looking at ugly code just a fyi
+			init();
+			/*
+			for(var i=32;i<500;i++){
+				if(document.getElementById("Offensive_Tree_"+i)!=null)
+					dragElement(document.getElementById("Offensive_Tree_"+i));
+			}*/
+		});
+		
+	</script>
+	
+
+</head>
+<body>
+	<div>
+		<select id="class_selector">
+			<option value="Elementalist">Elementalist</option>
+			<option value="Spellblade">Spellblade</option>
+			<option value="Hexlord">Hexlord</option>
+		</select>
+		<select id="Mastery_selector">
+			
+		</select>
+		<button id="toggleContainerButton" onclick="toggleContainer()">View Passive Tree</button>
+	</div>
+	
+	<div id="calculator" style="display:inline-block;color:white;padding-left:5px;margin-right:5px;float:left;">
+		<span>hi no one</span>
+	</div>
+	
+	<div style="display:inline;position:relative;">
+		<div id="masteryContainer">
+			<div id="mastery" style="display:inline-block;"></div>
+			<progress id="masteryBar" style="position:absolute; left:90px;bottom:218px; width:456px;height:15px;" value="0" max="25"></progress>
+		</div>
+		<div id="PassiveTreeContainer" style="display:none;">
+			<div id="PassiveTreePoints" style="position:absolute;"></div>
+			<div id="OffensiveTreeContainer" style="">hi this is the offensive tree container</div>
+			<div id="DefensiveTreeContainer" style="display:none;">still not made of time message me if you want to help out</div>
+			<div id="UtilityTreeContainer" style="display:none;">Comming soon tm.</div>
+		</div>
+	</div>
+</body>

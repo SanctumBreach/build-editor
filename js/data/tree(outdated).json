@@ -1,0 +1,107 @@
+//todo write out more of the skills also spit it up....also because of security policy I can't import this..check out tree.js im sure you can firgue out the huge diffrence
+"Skills":[
+	"Storm Fury":{"Discription":"Channel to strike the ground with blasts of thunder. Moves to the nearest enemey."},
+	"Destruction":{"Discription":"Channels a beam of lightning to destroy enemies in it's path, dealing more dmage the longer you channel"},
+	"Thunderball":{"Discription":"Rolls backwards and casts a ball of thunder that will spawn 3 additional balls on hit. Can be recast to detonate all remaining balls (this causes on hit effects)."},
+	"Rolling Thunder":{"Discription":"Throws a ball of thunder that rolls forwards and after a short delay, a series of lightning strikes hit at random locations around the ball."}
+]
+//yes I know the skill tree is a bit chaotic if you don't like it you can do it better. I might do the others in a more ordely manner(I won't)
+//while you are at it spellblade and hexlord still needs doing so...you know :P
+"classes":[
+	"Elementalist":[
+		"Stormbringer":{
+			"Mastery":[
+				{"node_id":"Stormbringer_1", "unlocks":"Stormbringer_2"									,"tooltip":"increases lightning damage by 10%"},
+				{"node_id":"Stormbringer_2", "unlocks":"Stormbringer_3" 								,"tooltip":"Increases electrocute damage by 1"},
+				{"node_id":"Stormbringer_3", "unlocks":"Stormbringer_4" 								,"tooltip":"Increases crit chance by 0.5"},
+				{"node_id":"Stormbringer_4", "unlocks":"Stormbringer_5,Stormbringer_17,Stormbringer_18" ,"tooltip":"Increases Lightning damage by 25%"},
+				{"node_id":"Stormbringer_5", "unlocks":"Stormbringer_6,Stormbringer_22" 				,"tooltip":"Increases Mana Shield on Hit by 5"},
+				{"node_id":"Stormbringer_6", "unlocks":"Stormbringer_7,Stormbringer_11" 				,"tooltip":"Increases Crit Damage by 5"},
+				{"node_id":"Stormbringer_7", "unlocks":"Stormbringer_8" 								,"tooltip":"Increases Crit Chance by 2"},
+				{"node_id":"Stormbringer_8", "unlocks":"Stormbringer_9" 								,"tooltip":"Increases Mana Shield on Hit by 10"},
+				{"node_id":"Stormbringer_9", "unlocks":"Stormbringer_10" 								,"tooltip":"Grants +5% More Lightning Damage"},
+				{"node_id":"Stormbringer_10","unlocks":"" 				 								,"tooltip":"Grant:Storm Fury"},
+				{"node_id":"Stormbringer_11","unlocks":"Stormbringer_12" 								,"tooltip":"Increases Lightning Resistance by 25"},
+				{"node_id":"Stormbringer_12","unlocks":"Stormbringer_13" 								,"tooltip":"Grants +5% More Lightning Damage"},
+				{"node_id":"Stormbringer_13","unlocks":"Stormbringer_14" 								,"tooltip":"Increases Crit Damage by 5"},
+				{"node_id":"Stormbringer_14","unlocks":"Stormbringer_15" 								,"tooltip":"Increases Lightning Resistance by 50"},
+				{"node_id":"Stormbringer_15","unlocks":"Stormbringer_16" 								,"tooltip":"Increases Mana Regen by 10"},
+				{"node_id":"Stormbringer_16","unlocks":"" 				 								,"tooltip":"Grant:Destruction"},
+				{"node_id":"Stormbringer_17","unlocks":"Stormbringer_18" 								,"tooltip":"Increases Lightning Resistance by 10"},
+				{"node_id":"Stormbringer_18","unlocks":"Stormbringer_19" 								,"tooltip":"Increases Mana Shield by 10."},
+				{"node_id":"Stormbringer_19","unlocks":"Stormbringer_20" 								,"tooltip":"Increases Crit Chance by 1."},
+				{"node_id":"Stormbringer_20","unlocks":"Stormbringer_21" 								,"tooltip":"Increases Mana Shield Regen by 5."},
+				{"node_id":"Stormbringer_21","unlocks":"" 												,"tooltip":"Grant:Thunderball"},
+				{"node_id":"Stormbringer_22","unlocks":"Stormbringer_23" 								,"tooltip":"Increases Lightning damage by 50%"},
+				{"node_id":"Stormbringer_23","unlocks":"Stormbringer_24" 								,"tooltip":"Increases Lightning Resistance by 25"},
+				{"node_id":"Stormbringer_24","unlocks":"Stormbringer_25" 								,"tooltip":"Increases Eletrocute Damage by 2."},
+				{"node_id":"Stormbringer_25","unlocks":"" 												,"tooltip":"Grant:Rolling Thunder"}
+			],
+			"Pointbar":["+100 Health","+15 Mana","5% Dodge","+10% Shock Chance","+250 Mana Shield"]
+		},
+		"Flameweaver":{
+			"Mastery":[
+				{"node_id":"Flameweaver_1", 							"tooltip":"Increases Health on hit by 3."},
+				{"node_id":"Flameweaver_2", "requires":"Flameweaver_1", "tooltip":"Increases Burn Damage by 0.5"},
+				{"node_id":"Flameweaver_3", "requires":"Flameweaver_2", "tooltip":"Increases Area of Effect by 25."},
+				{"node_id":"Flameweaver_4", "requires":"Flameweaver_3", "tooltip":"Increases Fire Damage by 5%"},
+				{"node_id":"Flameweaver_5", "requires":"Flameweaver_4", "tooltip":"Increases Fire Penetration by 5"},
+				{"node_id":"Flameweaver_6", "requires":"Flameweaver_5", "tooltip":"Increases Health by 50"},
+				{"node_id":"Flameweaver_7", "requires":"Flameweaver_6", "tooltip":"Increases Fire Damage by 25%"},
+				{"node_id":"Flameweaver_8", "requires":"Flameweaver_7", "tooltip":"Grants 5% more fire damage"},
+				{"node_id":"Flameweaver_9", "requires":"Flameweaver_8", "tooltip":"Increases Fire Penetration by 5"},
+				{"node_id":"Flameweaver_10","requires":"Flameweaver_9", "tooltip":"Grant:Flame Storm"},
+				{"node_id":"Flameweaver_11","requires":"Flameweaver_6", "tooltip":"Grants 5% Melt Chance"},
+				{"node_id":"Flameweaver_12","requires":"Flameweaver_11","tooltip":"Increases Health by 50."},
+				{"node_id":"Flameweaver_13","requires":"Flameweaver_12","tooltip":"Increases Health on Hit by 10"},
+				{"node_id":"Flameweaver_14","requires":"Flameweaver_13","tooltip":"Grants 5% More Fire Damage."},
+				{"node_id":"Flameweaver_15","requires":"Flameweaver_14","tooltip":"Increases Fire Damage by 50%"},
+				{"node_id":"Flameweaver_16","requires":"Flameweaver_15","tooltip":"Grant:Inferno"},
+				{"node_id":"Flameweaver_17","requires":"Flameweaver_4", "tooltip":"Increases Fire Resistance by 5"},
+				{"node_id":"Flameweaver_18","requires":"Flameweaver_4", "tooltip":"Increases Burn Damage by 1"},
+				{"node_id":"Flameweaver_19","requires":"Flameweaver_18","tooltip":"Increases Fire Resistance by 15."},
+				{"node_id":"Flameweaver_20","requires":"Flameweaver_19","tooltip":"Increases Fire Penetration by 5."},
+				{"node_id":"Flameweaver_21","requires":"Flameweaver_20","tooltip":"Grant:Conflagration"},
+				{"node_id":"Flameweaver_22","requires":"Flameweaver_5" ,"tooltip":"Increases Area of Effect by 25"},
+				{"node_id":"Flameweaver_23","requires":"Flameweaver_22","tooltip":"Increases Fire Damage by 15%"},
+				{"node_id":"Flameweaver_24","requires":"Flameweaver_23","tooltip":"Increases Burn Damage by 2"},
+				{"node_id":"Flameweaver_25","requires":"Flameweaver_24","tooltip":"Grant:Fire Shield"}
+			],
+			"Pointbar":["+75 Health","+125 Health","+50 Move Speed","+10% Melt Chance","+100 Move Speed"]
+		},
+		"Frozenheart":{
+			"Mastery":[
+				{"node_id":"Frozenheart_1", 							"tooltip":"Increases Cold Penetration by 3"},
+				{"node_id":"Frozenheart_2", "requires":"Frozenheart_1", "tooltip":"Increases Cold damage by 5%"},
+				{"node_id":"Frozenheart_3", "requires":"Frozenheart_2", "tooltip":"Increases Cold Resistance by 5"},
+				{"node_id":"Frozenheart_4", "requires":"Frozenheart_3", "tooltip":"Increases Mana by 3."},
+				{"node_id":"Frozenheart_5", "requires":"Frozenheart_4", "tooltip":"Increases Cold Resistance by 15"},
+				{"node_id":"Frozenheart_6", "requires":"Frozenheart_5", "tooltip":"Grants 5% More Cold Damage"},
+				{"node_id":"Frozenheart_7", "requires":"Frozenheart_6", "tooltip":"Increases Glancing Blow by 2%"},
+				{"node_id":"Frozenheart_8", "requires":"Frozenheart_7", "tooltip":"Increases Cold Damage by 50%"},
+				{"node_id":"Frozenheart_9", "requires":"Frozenheart_8", "tooltip":"Grants 5% More Cold Damage"},
+				{"node_id":"Frozenheart_10","requires":"Frozenheart_9", "tooltip":"Grant:Sleet Storm"},
+				{"node_id":"Frozenheart_11","requires":"Frozenheart_6", "tooltip":"Increases Mana by 25"},
+				{"node_id":"Frozenheart_12","requires":"Frozenheart_11","tooltip":"Increases Cold Resistance by 50"},
+				{"node_id":"Frozenheart_13","requires":"Frozenheart_12","tooltip":"Increases Cold Penetration by 5"},
+				{"node_id":"Frozenheart_14","requires":"Frozenheart_13","tooltip":"Increases Glancing Blow by 3%"},
+				{"node_id":"Frozenheart_15","requires":"Frozenheart_14","tooltip":"Grants 5% More Cold Damage"},
+				{"node_id":"Frozenheart_16","requires":"Frozenheart_15","tooltip":"Grant:Frozen Bond"},
+				{"node_id":"Frozenheart_17","requires":"Frozenheart_4", "tooltip":"Increases Cold Penetration by 3"},
+				{"node_id":"Frozenheart_18","requires":"Frozenheart_4", "tooltip":"Increases Glancing Blow by 2%"},
+				{"node_id":"Frozenheart_19","requires":"Frozenheart_18","tooltip":"Increases Cold Damage by 20%"},
+				{"node_id":"Frozenheart_20","requires":"Frozenheart_19","tooltip":"Increases Cold Penetration by 3."},
+				{"node_id":"Frozenheart_21","requires":"Frozenheart_20","tooltip":"Grant:Freeze Blast"},
+				{"node_id":"Frozenheart_22","requires":"Frozenheart_5" ,"tooltip":"Grants 5% More Cold Damage"},
+				{"node_id":"Frozenheart_23","requires":"Frozenheart_22","tooltip":"Increases Mana by 10"},
+				{"node_id":"Frozenheart_24","requires":"Frozenheart_23","tooltip":"Increases Cold Resistance by 25"},
+				{"node_id":"Frozenheart_25","requires":"Frozenheart_24","tooltip":"Grant:Icicle Crash"}
+			],
+			"Pointbar":["+15 Mana","+25 Mana","5% Block Chance","+29 Defence","+500 Health"]
+		}	
+	],
+	"Spellblade":[
+	],
+	"Hexlord":[
+	]
+]

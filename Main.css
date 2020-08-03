@@ -1,0 +1,58 @@
+body{
+	background-color:black;
+	color:white;
+}
+progress{
+	position:absolute; 
+	left:86px;
+	bottom:221px;
+	width:455px;
+	background-color: transparent;
+	height:12px;
+}
+#mastery{
+	width:650px; 
+	height:1075px; 
+	border:1px solid black; 
+	background-image:url('img/Elementalist.png');
+	background-repeat:no-repeat;
+	background-color:black;			
+}
+#OffensiveTreeContainer{
+	width:1522px;
+	height:950px;
+	background-image:url('img/Offensive_Tree_v2.png');
+	display:inline-block;
+	background-repeat:no-repeat;
+	background-position:bottom;
+	position:relative;
+}
+#PassiveTreePoints{
+	z-index:1;
+	position:absolute;
+	top:120px;
+}
+#PassiveTreeContainer{
+	display:inline-block;
+	position:relative;
+}
+#calculator{
+	width:350px;
+	height:1075px;
+	border:1px solid white;
+}
+.Mastery_tree{
+	width:40px;
+	height:42px;
+	border:3px solid red;
+	position:relative;
+}
+.borderGreen{
+	border:3px solid lime;
+}
+.borderRed{
+	border:3px solid red;
+}
+.borderBlue{
+	border:3px solid blue;
+}
