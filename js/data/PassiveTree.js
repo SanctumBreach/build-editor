@@ -86,13 +86,13 @@ var PassiveTrees=[
 			{"node_id":"Offensive_Tree_61" ,"attribute":"Enemies crit with Lightning Damage have a 25% chance to become conduits, which echo the Skills effect (this effect can be repeated from the echo)."	,"modifier":0	,"point":""		,"unlocks":""},
 			{"node_id":"Offensive_Tree_62" ,"attribute":"Increases Crit Chance by #"			,"modifier":0.5	,"point":"Storm"		,"unlocks":""},
 			//Storm req 6
-			{"node_id":"Offensive_Tree_63" ,"attribute":"Increases Lightning Penetration by #"	,"modifier":3	,"point":"Storm"		,"unlocks":"Offensive_Tree_64","Storm":7},
+			{"node_id":"Offensive_Tree_63" ,"attribute":"Increases Lightning Penetration by #"	,"modifier":3	,"point":"Storm"		,"unlocks":"Offensive_Tree_64","Storm":6},
 			{"node_id":"Offensive_Tree_64" ,"attribute":"Increases Lightning Penetration by #"	,"modifier":3	,"point":"Storm"		,"unlocks":"Offensive_Tree_65,Offensive_Tree_67"},
 			{"node_id":"Offensive_Tree_65" ,"attribute":"Increases Lightning Damage by #%"		,"modifier":5	,"point":"Storm"		,"unlocks":"Offensive_Tree_66"},
 			{"node_id":"Offensive_Tree_66" ,"attribute":"Lightning Skills have +# base Lightning Damage"					,"modifier":1	,"point":""		,"unlocks":""},
 			{"node_id":"Offensive_Tree_67" ,"attribute":"Increases Lightning Damage by #%"		,"modifier":5	,"point":"Storm"		,"unlocks":""},
 			//Storm req 10
-			{"node_id":"Offensive_Tree_68" ,"attribute":"Increases Lightning Damage by #%"		,"modifier":20	,"point":"Storm"		,"unlocks":"Offensive_Tree_69","Storm":11},
+			{"node_id":"Offensive_Tree_68" ,"attribute":"Increases Lightning Damage by #%"		,"modifier":20	,"point":"Storm"		,"unlocks":"Offensive_Tree_69","Storm":10},
 			{"node_id":"Offensive_Tree_69" ,"attribute":"Increases Electrocute Damage by #"		,"modifier":1	,"point":"Storm"		,"unlocks":"Offensive_Tree_70,Offensive_Tree_72"},
 			{"node_id":"Offensive_Tree_70" ,"attribute":"Increases Lightning Damage by #%"		,"modifier":20	,"point":"Storm"		,"unlocks":"Offensive_Tree_71"},
 			{"node_id":"Offensive_Tree_71" ,"attribute":"Skills have a 20% chance to release a lightning crystal convergence at target location that deals # Lightning Damage per player level after a 1 second delay and has 150 radius"					,"modifier":2	,"point":""		,"unlocks":""},
@@ -292,13 +292,13 @@ var PassiveTrees=[
 			{"node_id":"Defensive_Tree_61" ,"attribute":"#% chance upon being hit to restore Mana Shield to max","modifier":10	,"point":""			,"unlocks":""},
 			{"node_id":"Defensive_Tree_62" ,"attribute":"Increases Mana Shield by #"							,"modifier":5	,"point":"Thunder"		,"unlocks":""},
 			//Thunder req 6
-			{"node_id":"Defensive_Tree_63" ,"attribute":"Increases Mana Shield on Hit by #"					,"modifier":5	,"point":"Thunder"		,"unlocks":"Defensive_Tree_64","Thunder":7},
+			{"node_id":"Defensive_Tree_63" ,"attribute":"Increases Mana Shield on Hit by #"					,"modifier":5	,"point":"Thunder"		,"unlocks":"Defensive_Tree_64","Thunder":6},
 			{"node_id":"Defensive_Tree_64" ,"attribute":"Increases Mana Shield on Hit by #"					,"modifier":5	,"point":"Thunder"		,"unlocks":"Defensive_Tree_65,Defensive_Tree_67"},
 			{"node_id":"Defensive_Tree_65" ,"attribute":"Increases Mana Shield on Hit by #"					,"modifier":5	,"point":"Thunder"		,"unlocks":"Defensive_Tree_66"},
 			{"node_id":"Defensive_Tree_66" ,"attribute":"Upon being hit for more than 20% of your Max Health in a single hit you will gain #% increased Mana Shield Regen for 2 seconds"	,"modifier":500	,"point":""		,"unlocks":""},
 			{"node_id":"Defensive_Tree_67" ,"attribute":"Increases Mana Shield on Hit by #"					,"modifier":5	,"point":"Thunder"		,"unlocks":""},
 			//Thunder req 10
-			{"node_id":"Defensive_Tree_68" ,"attribute":"Increases Lightning Resistance by #"					,"modifier":10	,"point":"Thunder"		,"unlocks":"Defensive_Tree_69","Thunder":11},
+			{"node_id":"Defensive_Tree_68" ,"attribute":"Increases Lightning Resistance by #"					,"modifier":10	,"point":"Thunder"		,"unlocks":"Defensive_Tree_69","Thunder":10},
 			{"node_id":"Defensive_Tree_69" ,"attribute":"Increases Mana Shield by #"							,"modifier":10	,"point":"Thunder"		,"unlocks":"Defensive_Tree_70,Defensive_Tree_72"},
 			{"node_id":"Defensive_Tree_70" ,"attribute":"Increases Lightning Resistance by #"					,"modifier":10	,"point":"Thunder"		,"unlocks":"Defensive_Tree_71"},
 			{"node_id":"Defensive_Tree_71" ,"attribute":"Skills have a 20% chance to release a lightning crystal convergence at target location that deals # Lightning Damage per player level after a 1 second delay and has 150 radius"					,"modifier":2	,"point":""		,"unlocks":""},
@@ -411,7 +411,7 @@ var PassiveTrees=[
 			{"node_id":"Defensive_Tree_162","attribute":"Increases Poison Resistance by #" 						,"modifier":10 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_163"},
 			{"node_id":"Defensive_Tree_163","attribute":"Increases Bile Chance by #%" 							,"modifier":10 ,"point":"" ,"unlocks":""},
 			//Viper req 15
-			{"node_id":"Defensive_Tree_164","attribute":"Increases Defence by #" 								,"modifier":5 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_165","Viper":15},
+			{"node_id":"Defensive_Tree_164","attribute":"Increases Defence by #" 								,"modifier":5 	,"point":"Viper" 	,"unlocks":"Defensive_Tree_165","Viper":15},
 			{"node_id":"Defensive_Tree_165","attribute":"Increases Dodge Chance by #%" 						,"modifier":5 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_166"},
 			{"node_id":"Defensive_Tree_166","attribute":"Increases Poison Resistance by #" 					,"modifier":25 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_167"},
 			{"node_id":"Defensive_Tree_167","attribute":"When you dodge, release a ball of poison at your location that explodes for # Poison Damage per player level in 200 radius." ,"modifier":2 ,"point":"" ,"unlocks":""}
