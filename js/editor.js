@@ -1,5 +1,15 @@
 //no don't look here its ugly why would you do this to yourself T_T
 var version="A1.9";
+var stupidTexts=[
+	"Hi, please buff werecrabs :) dw it will be fine",
+	"Hi, please make aura's stack again",
+	"Hi, please nerf spellblade its too strong",
+	"Hi, this text box gives bad advice",
+	"Hi, nerf drop rates",
+	"Hi, nerf cast speed. I can cast spells at 0.75 times before the enemy is next to me",
+	"Hi, don't add more legendaries",
+	"o/"
+];
 
 function init(){
 	$("#class_selector").change(function(){
@@ -48,8 +58,11 @@ function saveIds(arr){
 }
 
 function load(){
+	var stupidTxtValue=Math.floor(Math.random()*stupidTexts.length);
 	var backup=_save();	
-	var loadfile=prompt("Please Paste the build below", "Harry Potter");
+	var loadfile=prompt("Please Paste the build below", stupidTexts[stupidTxtValue]);
+	if(loadfile===null)
+		return;
 	_load(loadfile,backup);
 	calculateBonuses();
 }
