@@ -6,17 +6,6 @@ when it comes to the order of the points for defensive it goes:Phoenix,Thunder,O
 for ultility it goes: Goblin,Oak,Rage,Cheetah,Stok,Vampire
 */
 var PassiveTrees=[
-
-//Storm req 6
-//Storm req 10
-//Bull req 6
-//Bull req 10
-//Blizzard req 7
-//Blizzard req 10
-//Corruption req 6
-//Corruption req 9
-//Decay req 6
-//Decay req 9
 	{	"Name":"Offensive Tree",
 		"Inferno":[,,,"Offensive_Tree_33",,,,"Offensive_Tree_40",,,,"Offensive_Tree_45",,,,"Offensive_Tree_52"],
 		"Blizzard":[,,,"Offensive_Tree_103",,,,"Offensive_Tree_109",,,"Offensive_Tree_114",,,,,"Offensive_Tree_120"],
