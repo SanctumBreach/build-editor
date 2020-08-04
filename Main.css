@@ -16,6 +16,15 @@ progress{
 	width:32px;
 	height:32px;
 }
+#statsCounter{
+	display:inline-block;
+	width:1523px;
+	float:right;
+}
+#statsCounter span{
+	width:33%;
+	display:inline-block;
+}
 #mastery{
 	width:650px; 
 	height:1075px; 

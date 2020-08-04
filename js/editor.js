@@ -12,25 +12,12 @@ function init(){
 	$("#Mastery_selector").change(function(){
 		var ClassMastery=classes[$("#class_selector").val()][this.selectedIndex];
 		var offset=ClassMastery.Offset;
-		$("#mastery").css('background-position',offset);
-		
+		$("#mastery").css('background-position',offset);		
 		loadMasteryTree(ClassMastery);
 		calculateBonuses();
 	});
-	$("#class_selector").change();
-	$("#Mastery_selector").change();
 	PopulatePassiveTrees();
-	$("#Offensive_Tree_1").addClass("borderBlue");
-	$("#Offensive_Tree_10").addClass("borderBlue");
-	$("#Offensive_Tree_17").addClass("borderBlue");
-	$("#Offensive_Tree_25").addClass("borderBlue");
-	
-	$("#Defensive_Tree_1").addClass("borderBlue");
-	$("#Defensive_Tree_10").addClass("borderBlue");
-	$("#Defensive_Tree_17").addClass("borderBlue");
-	$("#Defensive_Tree_25").addClass("borderBlue");
-	
-	
+	resetAllTrees();
 }
 function loadSubclass(PlayerClass){
 	var arr=classes[PlayerClass];
@@ -190,6 +177,7 @@ function calculateBonuses(){
 		txt+="<span>"+key+":"+value+"</span></br>";
 	}	
 	$("#PassiveTreePoints")[0].innerHTML=txt;
+	calculatePointsSpend();
 }
 function cascadeUnselectMastery(ClassMastery,index){
 	var _name=ClassMastery;
@@ -281,6 +269,35 @@ function PopulatePassiveTrees(){
 		$(this).removeClass("borderBlue").addClass("borderGreen");
 		calculateBonuses();
 	});
+}
+
+function calculatePointsSpend(){
+	console.log("calculatePointsSpend");
+	var masteryPoints=$("#mastery .borderGreen").length;
+	var passiveSkillPoints=$("#PassiveTreeContainer .borderGreen").length;
+	var level=passiveSkillPoints-20;
+	if(level<1)
+		level=1;
+	
+	$("#levelCounter")[0].innerHTML="Level: "+level;
+	$("#MasteryCounter")[0].innerHTML="Mastery: "+masteryPoints+"/25";
+	$("#PassiveTreeCounter")[0].innerHTML="Passives: "+passiveSkillPoints+"/118";
+}
+function resetAllTrees(){	
+	//todo unselect EVERYTHING	
+	
+	$("#class_selector").change();
+	$("#Mastery_selector").change();
+	
+	$("#Offensive_Tree_1").addClass("borderBlue");
+	$("#Offensive_Tree_10").addClass("borderBlue");
+	$("#Offensive_Tree_17").addClass("borderBlue");
+	$("#Offensive_Tree_25").addClass("borderBlue");
+	
+	$("#Defensive_Tree_1").addClass("borderBlue");
+	$("#Defensive_Tree_10").addClass("borderBlue");
+	$("#Defensive_Tree_17").addClass("borderBlue");
+	$("#Defensive_Tree_25").addClass("borderBlue");
 }
 
 

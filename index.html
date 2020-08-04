@@ -102,11 +102,13 @@
 			
 		</select>
 		<button id="toggleContainerButton" onclick="toggleContainer()">View Passive Tree</button>
+		<div id="statsCounter"><span id="levelCounter">1</span><span id="MasteryCounter">0/25</span><span id="PassiveTreeCounter">0/118</span></div>
 	</div>
 	
 	<div id="calculator" style="display:inline-block;color:white;padding-left:5px;margin-right:5px;float:left;overflow:scroll;">
 		<span>hi no one</span>
 	</div>
+	
 	
 	<div style="display:inline-block;position:relative;">
 		<div id="masteryContainer">
@@ -117,6 +119,7 @@
 			<div style="position:absolute; z-index:1;">
 				<div id="PassiveTreePoints" style="position:absolute;"></div>
 				<div id="passiveTreeButtonSwitchContainer"><button onclick="PassiveTreeSwitcher(1)">Offensive Tree</button><button onclick="PassiveTreeSwitcher(2)">Defensive Tree</button><button onclick="PassiveTreeSwitcher(3)" disabled="disabled">Utility Tree</button></div>
+				
 			</div>
 			<div id="OffensiveTreeContainer" style="">hi this is the offensive tree container</div>
 			<div id="DefensiveTreeContainer" style="display:none;">still not made of time message me if you want to help out</div>
