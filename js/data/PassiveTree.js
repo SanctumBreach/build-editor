@@ -192,9 +192,9 @@ var PassiveTrees=[
 			{"node_id":"Offensive_Tree_151","attribute":"Increases Area of Effect by #" 		,"modifier":10 	,"point":"Decay" 		,"unlocks":"Offensive_Tree_152"},
 			{"node_id":"Offensive_Tree_152","attribute":"Enemies killed have a 25% chance to explode for # Poison Damage per player level with 200 radius" ,"modifier":3 ,"point":"" ,"unlocks":""},
 			//Decay req 6
-			{"node_id":"Offensive_Tree_153","attribute":"Grants Increased Speed #%" 			,"modifier":5 	,"point":"Decay" 		,"unlocks":"Offensive_Tree_154","Decay":6},
-			{"node_id":"Offensive_Tree_154","attribute":"Grants Increased Speed #%" 			,"modifier":5 	,"point":"Decay" 		,"unlocks":"Offensive_Tree_155"},
-			{"node_id":"Offensive_Tree_155","attribute":"Grants Increased Speed #%" 			,"modifier":5 	,"point":"Decay" 		,"unlocks":"Offensive_Tree_156"},
+			{"node_id":"Offensive_Tree_153","attribute":"Increases Speed by #%" 				,"modifier":5 	,"point":"Decay" 		,"unlocks":"Offensive_Tree_154","Decay":6},
+			{"node_id":"Offensive_Tree_154","attribute":"Increases Speed by #%" 				,"modifier":5 	,"point":"Decay" 		,"unlocks":"Offensive_Tree_155"},
+			{"node_id":"Offensive_Tree_155","attribute":"Increases Speed by #%" 				,"modifier":5 	,"point":"Decay" 		,"unlocks":"Offensive_Tree_156"},
 			{"node_id":"Offensive_Tree_156","attribute":"Skills have a 10% chance to spawn a poisonous Wolf that has 10 Health per palyer level and deals # Poison Damage per player level" ,"modifier":1 ,"point":"" ,"unlocks":""},
 			//Decay req 9
 			{"node_id":"Offensive_Tree_157","attribute":"Increases Poison Damage by #%" 		,"modifier":10 	,"point":"Decay" 		,"unlocks":"Offensive_Tree_158","Decay":9},
