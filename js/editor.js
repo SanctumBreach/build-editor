@@ -5,9 +5,9 @@ function init(){
 		$("#mastery").css("background-image","url('img/"+$("#class_selector").val()+".png')");
 		$("#mastery").css('background-position',"0px");
 		
-		loadSubclass($(this).val());
-		calculateBonuses();
+		loadSubclass($(this).val());		
 		$("#Mastery_selector").change();
+		calculateBonuses();
 	});
 	$("#Mastery_selector").change(function(){
 		var ClassMastery=classes[$("#class_selector").val()][this.selectedIndex];
