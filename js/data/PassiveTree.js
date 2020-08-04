@@ -16,7 +16,7 @@ var PassiveTrees=[
 		"Nodes":[
 			//left side
 			{"node_id":"Offensive_Tree_1" ,"attribute":"Increases Health by #"					,"modifier":10	,"point":"Decay"		,"unlocks":"Offensive_Tree_2,Offensive_Tree_9"},
-			{"node_id":"Offensive_Tree_2" ,"attribute":"Increases Speed by +#%"					,"modifier":5	,"point":"Bull"			,"unlocks":"Offensive_Tree_3,Offensive_Tree_6"},
+			{"node_id":"Offensive_Tree_2" ,"attribute":"Increases Speed by #%"					,"modifier":5	,"point":"Bull"			,"unlocks":"Offensive_Tree_3,Offensive_Tree_6"},
 			{"node_id":"Offensive_Tree_3" ,"attribute":"Increases Weapon Damage by #"			,"modifier":1	,"point":"Blizzard"		,"unlocks":"Offensive_Tree_4"},
 			{"node_id":"Offensive_Tree_4" ,"attribute":"Increases Mana Shield by #"				,"modifier":10	,"point":"Decay"		,"unlocks":"Offensive_Tree_5"},
 			{"node_id":"Offensive_Tree_5" ,"attribute":"Increases Mana by #"					,"modifier":5	,"point":"Bull"			,"unlocks":""},
@@ -42,7 +42,7 @@ var PassiveTrees=[
 			{"node_id":"Offensive_Tree_23","attribute":"Increases Soul Find by #%"				,"modifier":5	,"point":"Inferno"		,"unlocks":""},
 			{"node_id":"Offensive_Tree_24","attribute":"Increases Relic Charges on hit by #%"	,"modifier":5	,"point":"Corruption"	,"unlocks":""},
 			//bottom side
-			{"node_id":"Offensive_Tree_25","attribute":"Increases Speed +#%"					,"modifier":5	,"point":"Bull"			,"unlocks":"Offensive_Tree_26"},
+			{"node_id":"Offensive_Tree_25","attribute":"Increases Speed by #%"					,"modifier":5	,"point":"Bull"			,"unlocks":"Offensive_Tree_26"},
 			{"node_id":"Offensive_Tree_26","attribute":"Increases Relic Charges on hit by #%"	,"modifier":10	,"point":"Corruption"	,"unlocks":"Offensive_Tree_27"},
 			{"node_id":"Offensive_Tree_27","attribute":"Increases Magic Find by #%"				,"modifier":5	,"point":"Inferno"		,"unlocks":"Offensive_Tree_28,Offensive_Tree_30"},
 			{"node_id":"Offensive_Tree_28","attribute":"Increases Health by #"					,"modifier":10	,"point":"Decay"		,"unlocks":"Offensive_Tree_29"},
@@ -75,7 +75,7 @@ var PassiveTrees=[
 			//Inferno req 15
 			{"node_id":"Offensive_Tree_52","attribute":"Grants #% More Fire Damage"								,"modifier":5	,"point":"Inferno"	,"unlocks":"Offensive_Tree_53","Inferno":15},
 			{"node_id":"Offensive_Tree_53","attribute":"Increases Area of Effect by #"							,"modifier":25	,"point":"Inferno"	,"unlocks":"Offensive_Tree_54"},
-			{"node_id":"Offensive_Tree_54","attribute":"Increases Area of Effect by #"							,"modifier":5	,"point":"Inferno"	,"unlocks":"Offensive_Tree_55,Offensive_Tree_56"},			
+			{"node_id":"Offensive_Tree_54","attribute":"Increases Area of Effect by #"							,"modifier":25	,"point":"Inferno"	,"unlocks":"Offensive_Tree_55,Offensive_Tree_56"},			
 			{"node_id":"Offensive_Tree_55","attribute":"Skills have a 50% chance on hit to spawn a fiery combustion at enemies location that deals 5 Fire Damage per player level with 200 Radius"							,"modifier":0	,"point":""	,"Inferno":15	,"unlocks":""},
 			{"node_id":"Offensive_Tree_56","attribute":"Grants #% More Fire Damage"								,"modifier":5	,"point":"Inferno"	,"unlocks":""},
 			//Storm req 3
@@ -114,10 +114,10 @@ var PassiveTrees=[
 			//Bull req 6
 			{"node_id":"Offensive_Tree_85" ,"attribute":"Increases Physical Damage by #%"		,"modifier":5	,"point":"Bull"			,"unlocks":"Offensive_Tree_86","Bull":6},
 			{"node_id":"Offensive_Tree_86" ,"attribute":"Increases Physical Penetration by #"	,"modifier":3	,"point":"Bull"			,"unlocks":"Offensive_Tree_87,Offensive_Tree_90"},
-			{"node_id":"Offensive_Tree_87" ,"attribute":"Increases Phyiscal Damage by #%"		,"modifier":5	,"point":"Bull"			,"unlocks":"Offensive_Tree_88"},
+			{"node_id":"Offensive_Tree_87" ,"attribute":"Increases Physical Damage by #%"		,"modifier":5	,"point":"Bull"			,"unlocks":"Offensive_Tree_88"},
 			{"node_id":"Offensive_Tree_88" ,"attribute":"Increases Physical Penetration by #"	,"modifier":3	,"point":"Bull"			,"unlocks":"Offensive_Tree_89"},
 			{"node_id":"Offensive_Tree_89" ,"attribute":"Skills have a 10% chance on hit to release an orb at player location that fires beams after a 1 second delay. The beams converge to deal # Physical Damage per player level with a 100 radius"				,"modifier":3	,"point":""		,"unlocks":""},
-			{"node_id":"Offensive_Tree_90" ,"attribute":"Increases Phyiscal Damage by #%"		,"modifier":5	,"point":"Bull"			,"unlocks":""},
+			{"node_id":"Offensive_Tree_90" ,"attribute":"Increases Physical Damage by #%"		,"modifier":5	,"point":"Bull"			,"unlocks":""},
 			//Bull req 10
 			{"node_id":"Offensive_Tree_91" ,"attribute":"Increases Physical Damage by #%"		,"modifier":20	,"point":"Bull"			,"unlocks":"Offensive_Tree_92","Bull":10},
 			{"node_id":"Offensive_Tree_92" ,"attribute":"Increases Physical Penetration by #"	,"modifier":5	,"point":"Bull"			,"unlocks":"Offensive_Tree_93,Offensive_Tree_94"},
@@ -153,10 +153,10 @@ var PassiveTrees=[
 			{"node_id":"Offensive_Tree_118" ,"attribute":"Grants #% More Cold Damage"			,"modifier":5	,"point":"Blizzard"		,"unlocks":"Offensive_Tree_119"},
 			{"node_id":"Offensive_Tree_119" ,"attribute":"Increases Cold Damage by #%"			,"modifier":15	,"point":"Blizzard"		,"unlocks":""},
 			//Blizzard req 15
-			{"node_id":"Offensive_Tree_120" ,"attribute":"Increases Glancing Blow by #%"		,"modifier":3	,"point":"Blizzard"		,"unlocks":"Offensive_Tree_121","Blizzard":15},
-			{"node_id":"Offensive_Tree_121" ,"attribute":"Increases Glancing Blow by #%"		,"modifier":3	,"point":"Blizzard"		,"unlocks":"Offensive_Tree_122"},
-			{"node_id":"Offensive_Tree_122" ,"attribute":"Increases Glancing Blow by #%"		,"modifier":3	,"point":"Blizzard"		,"unlocks":"Offensive_Tree_123"},
-			{"node_id":"Offensive_Tree_123" ,"attribute":"Reflects #% of damage taken back as Cold Damage in a 100 radius at player location"					,"modifier":20	,"point":""		,"unlocks":""},
+			{"node_id":"Offensive_Tree_120" ,"attribute":"Grants #% More Cold Damage"		,"modifier":5	,"point":"Blizzard"		,"unlocks":"Offensive_Tree_121","Blizzard":15},
+			{"node_id":"Offensive_Tree_121" ,"attribute":"Grants #% More Cold Damage"		,"modifier":5	,"point":"Blizzard"		,"unlocks":"Offensive_Tree_122"},
+			{"node_id":"Offensive_Tree_122" ,"attribute":"Grants #% More Cold Damage"		,"modifier":5	,"point":"Blizzard"		,"unlocks":"Offensive_Tree_123"},
+			{"node_id":"Offensive_Tree_123" ,"attribute":"Grants a persistent Aura (triggered by receving damage) that deals # Cold Damage per player level with 250 radius"					,"modifier":3	,"point":""		,"unlocks":""},
 			//Corruption req 3
 			{"node_id":"Offensive_Tree_124","attribute":"Increases Chaos Damage by #%" 			,"modifier":5 	,"point":"Corruption" 	,"unlocks":"Offensive_Tree_125","Corruption":3},
 			{"node_id":"Offensive_Tree_125","attribute":"Increases Chaos Penetration by #" 		,"modifier":3 	,"point":"Corruption" 	,"unlocks":"Offensive_Tree_126"},
@@ -222,7 +222,7 @@ var PassiveTrees=[
 		"Nodes":[
 			//left side
 			{"node_id":"Defensive_Tree_1" ,"attribute":"Increases Dodge Chance by #"							,"modifier":1	,"point":"Viper"		,"unlocks":"Defensive_Tree_2,Defensive_Tree_9"},
-			{"node_id":"Defensive_Tree_2" ,"attribute":"Increases Block Chance by +#%"							,"modifier":1	,"point":"Ox"			,"unlocks":"Defensive_Tree_3,Defensive_Tree_6"},
+			{"node_id":"Defensive_Tree_2" ,"attribute":"Increases Block Chance by #%"							,"modifier":1	,"point":"Ox"			,"unlocks":"Defensive_Tree_3,Defensive_Tree_6"},
 			{"node_id":"Defensive_Tree_3" ,"attribute":"Increases Mana by #"									,"modifier":3	,"point":"Frozen"		,"unlocks":"Defensive_Tree_4"},
 			{"node_id":"Defensive_Tree_4" ,"attribute":"Increases Defence by #"								,"modifier":1	,"point":"Viper"		,"unlocks":"Defensive_Tree_5"},
 			{"node_id":"Defensive_Tree_5" ,"attribute":"Increases Physical Resistance by #"					,"modifier":3	,"point":"Ox"			,"unlocks":""},
@@ -239,14 +239,14 @@ var PassiveTrees=[
 			{"node_id":"Defensive_Tree_15","attribute":"Increases Physical Resistance by #"					,"modifier":3	,"point":"Ox"			,"unlocks":""},
 			{"node_id":"Defensive_Tree_16","attribute":"increases Mana by #"									,"modifier":3	,"point":"Frozen"		,"unlocks":""},
 			//right side	
-			{"node_id":"Defensive_Tree_17"	,"attribute":"Increases Gold Find by #%"							,"modifier":10	,"point":"Frozen"		,"unlocks":"Defensive_Tree_18"},
-			{"node_id":"Defensive_Tree_18"	,"attribute":"Increases Mana Shield by #"							,"modifier":10	,"point":"Viper"		,"unlocks":"Defensive_Tree_19,Defensive_Tree_24"},
-			{"node_id":"Defensive_Tree_19"	,"attribute":"Increases Soul Find by #%"							,"modifier":5	,"point":"Phoenix"		,"unlocks":"Defensive_Tree_20"},
-			{"node_id":"Defensive_Tree_20"	,"attribute":"Increases Gold Find by #%"							,"modifier":10	,"point":"Frozen"		,"unlocks":"Defensive_Tree_21"},
-			{"node_id":"Defensive_Tree_21"	,"attribute":"Increases Crit Chance by #"							,"modifier":0.5	,"point":"Thunder"		,"unlocks":"Defensive_Tree_22"},
-			{"node_id":"Defensive_Tree_22"	,"attribute":"Increases Health by #"								,"modifier":10	,"point":"Viper"		,"unlocks":"Defensive_Tree_23"},
-			{"node_id":"Defensive_Tree_23"	,"attribute":"Increases Soul Find by #%"							,"modifier":5	,"point":"Phoenix"		,"unlocks":""},
-			{"node_id":"Defensive_Tree_24"	,"attribute":"Increases Relic Charges on hit by #%"					,"modifier":5	,"point":"Void"			,"unlocks":""},
+			{"node_id":"Defensive_Tree_17"	,"attribute":"Increases Cold Resistance by #"						,"modifier":3	,"point":"Frozen"		,"unlocks":"Defensive_Tree_18"},
+			{"node_id":"Defensive_Tree_18"	,"attribute":"Increases Dodge Chance by #%"							,"modifier":1	,"point":"Viper"		,"unlocks":"Defensive_Tree_19,Defensive_Tree_24"},
+			{"node_id":"Defensive_Tree_19"	,"attribute":"Increases Health by #"								,"modifier":10	,"point":"Phoenix"		,"unlocks":"Defensive_Tree_20"},
+			{"node_id":"Defensive_Tree_20"	,"attribute":"Increases Glancing Blow by #%"						,"modifier":1	,"point":"Frozen"		,"unlocks":"Defensive_Tree_21"},
+			{"node_id":"Defensive_Tree_21"	,"attribute":"Increases Mana Shield by #"							,"modifier":5	,"point":"Thunder"		,"unlocks":"Defensive_Tree_22"},
+			{"node_id":"Defensive_Tree_22"	,"attribute":"Increases Poison Resistance by #"						,"modifier":3	,"point":"Viper"		,"unlocks":"Defensive_Tree_23"},
+			{"node_id":"Defensive_Tree_23"	,"attribute":"Increases Health by #"								,"modifier":10	,"point":"Phoenix"		,"unlocks":""},
+			{"node_id":"Defensive_Tree_24"	,"attribute":"Increases Chaos Resistance by #"						,"modifier":3	,"point":"Void"			,"unlocks":""},
 			//bottom side
 			{"node_id":"Defensive_Tree_25"	,"attribute":"Increases Block Chance by #%"							,"modifier":1	,"point":"Ox"			,"unlocks":"Defensive_Tree_26"},
 			{"node_id":"Defensive_Tree_26"	,"attribute":"Increases Iron Skin by #"								,"modifier":5	,"point":"Void"			,"unlocks":"Defensive_Tree_27"},
@@ -268,12 +268,12 @@ var PassiveTrees=[
 			{"node_id":"Defensive_Tree_40"	,"attribute":"Increases Health Regen by #"							,"modifier":1	,"point":"Phoenix"		,"unlocks":"Defensive_Tree_41","Phoenix":7},
 			{"node_id":"Defensive_Tree_41"	,"attribute":"Increases Fire Resistance by #"						,"modifier":5	,"point":"Phoenix"		,"unlocks":"Defensive_Tree_42"},
 			{"node_id":"Defensive_Tree_42"	,"attribute":"Increases Health Regen by #"							,"modifier":1	,"point":"Phoenix"		,"unlocks":"Defensive_Tree_43"},
-			{"node_id":"Defensive_Tree_43"	,"attribute":"Increases Increases Fire Resistance by #"				,"modifier":5	,"point":"Phoenix"		,"unlocks":"Defensive_Tree_44"},
+			{"node_id":"Defensive_Tree_43"	,"attribute":"Increases Fire Resistance by #"						,"modifier":5	,"point":"Phoenix"		,"unlocks":"Defensive_Tree_44"},
 			{"node_id":"Defensive_Tree_44"	,"attribute":"There is a 5% upon being hit to gain Health Regen equal to player level x# for 5 seconds"	,"modifier":3	,"point":""		,"unlocks":""},			
 			//Phoenix req 11
 			{"node_id":"Defensive_Tree_45"	,"attribute":"Increases Health by #"								,"modifier":15	,"point":"Phoenix"		,"unlocks":"Defensive_Tree_46","Phoenix":11},
 			{"node_id":"Defensive_Tree_46"	,"attribute":"Increases Fire Resistance by #"						,"modifier":10	,"point":"Phoenix"		,"unlocks":"Defensive_Tree_47"},
-			{"node_id":"Defensive_Tree_47"	,"attribute":"Increases Health Regen by #"							,"modifier":15	,"point":"Phoenix"		,"unlocks":"Defensive_Tree_48,Defensive_Tree_49"},
+			{"node_id":"Defensive_Tree_47"	,"attribute":"Increases Health by #"							,"modifier":15	,"point":"Phoenix"		,"unlocks":"Defensive_Tree_48,Defensive_Tree_49"},
 			{"node_id":"Defensive_Tree_48"	,"attribute":"Increases Fire Resistance by #"						,"modifier":10	,"point":"Phoenix"		,"unlocks":""},
 			{"node_id":"Defensive_Tree_49"	,"attribute":"Increases Fire Resistance by #"						,"modifier":10	,"point":"Phoenix"		,"unlocks":"Defensive_Tree_50,Defensive_Tree_51"},
 			{"node_id":"Defensive_Tree_50"	,"attribute":"Has a chance equal to Fire Damage Leech to conjure fiery rocks beneath every enemey in a 1000 radius and deal # Fire Damage per player level"	,"modifier":2	,"point":""			,"unlocks":""},
@@ -282,7 +282,7 @@ var PassiveTrees=[
 			{"node_id":"Defensive_Tree_52"	,"attribute":"Grants #% Melt Chance"								,"modifier":5	,"point":"Phoenix"		,"unlocks":"Defensive_Tree_53","Phoenix":15},
 			{"node_id":"Defensive_Tree_53"	,"attribute":"Grants #% Melt Chance"								,"modifier":5	,"point":"Phoenix"		,"unlocks":"Defensive_Tree_54"},
 			{"node_id":"Defensive_Tree_54"	,"attribute":"Grants #% Melt Chance"								,"modifier":5	,"point":"Phoenix"		,"unlocks":"Defensive_Tree_55,Defensive_Tree_56"},			
-			{"node_id":"Defensive_Tree_55"	,"attribute":"Skills have a 50% chance on hit to spawn a fiery combustion at enemies location that deals 5 Fire Damage per player level with 200 Radius"		,"modifier":0	,"point":""	,"Phoenix":15	,"unlocks":""},
+			{"node_id":"Defensive_Tree_55"	,"attribute":"Grants #% Melt Chance"								,"modifier":25	,"point":""	,"Phoenix":15	,"unlocks":""},
 			{"node_id":"Defensive_Tree_56"	,"attribute":"Grants # Melt Duration"								,"modifier":0.5	,"point":"Phoenix"		,"unlocks":""},
 			//Thunder req 3
 			{"node_id":"Defensive_Tree_57" ,"attribute":"Increases Lightning Resistance by #"					,"modifier":3	,"point":"Thunder"		,"unlocks":"Defensive_Tree_58","Thunder":3},
@@ -304,11 +304,11 @@ var PassiveTrees=[
 			{"node_id":"Defensive_Tree_71" ,"attribute":"Skills have a 20% chance to release a lightning crystal convergence at target location that deals # Lightning Damage per player level after a 1 second delay and has 150 radius"					,"modifier":2	,"point":""		,"unlocks":""},
 			{"node_id":"Defensive_Tree_72" ,"attribute":"Increases Lightning Resistance by #"					,"modifier":10	,"point":"Thunder"		,"unlocks":""},
 			//Thunder req 15
-			{"node_id":"Defensive_Tree_73" ,"attribute":"Increases Lightning Resistance by #"					,"modifier":20	,"point":"Thunder"		,"unlocks":"Defensive_Tree_74","Thunder":15},
+			{"node_id":"Defensive_Tree_73" ,"attribute":"Increases Mana Shield Regen by #"						,"modifier":5	,"point":"Thunder"		,"unlocks":"Defensive_Tree_74","Thunder":15},
 			{"node_id":"Defensive_Tree_74" ,"attribute":"Increases Mana Shield Regen by #"						,"modifier":5	,"point":"Thunder"		,"unlocks":"Defensive_Tree_75,Defensive_Tree_77"},
 			{"node_id":"Defensive_Tree_75" ,"attribute":"Increases Mana Shield Regen by #"						,"modifier":5	,"point":"Thunder"		,"unlocks":"Defensive_Tree_76"},
 			{"node_id":"Defensive_Tree_76" ,"attribute":"Increases Shocked Chance by #%"						,"modifier":10	,"point":""				,"unlocks":""},
-			{"node_id":"Defensive_Tree_77" ,"attribute":"Increases Mana Shield Regen by #"						,"modifier":5	,"point":"Thunder"		,"unlocks":""},
+			{"node_id":"Defensive_Tree_77" ,"attribute":"Increases Lightning Resistance by #"					,"modifier":20	,"point":"Thunder"		,"unlocks":""},
 			//Ox req 3			
 			{"node_id":"Defensive_Tree_78" ,"attribute":"Increases Physical Resistance by #"					,"modifier":3	,"point":"Ox"			,"unlocks":"Defensive_Tree_79","Ox":3},
 			{"node_id":"Defensive_Tree_79" ,"attribute":"Increases Block Chance by #%"							,"modifier":1	,"point":"Ox"			,"unlocks":"Defensive_Tree_81,Defensive_Tree_80"},
@@ -341,9 +341,9 @@ var PassiveTrees=[
 			//Frozen req 3
 			{"node_id":"Defensive_Tree_103" ,"attribute":"Increases Mana by #"									,"modifier":3	,"point":"Frozen"		,"unlocks":"Defensive_Tree_104","Frozen":3},
 			{"node_id":"Defensive_Tree_104" ,"attribute":"Increases Cold Resistance by #"						,"modifier":3	,"point":"Frozen"		,"unlocks":"Defensive_Tree_105,Defensive_Tree_107"},
-			{"node_id":"Defensive_Tree_105" ,"attribute":"Increases Man by #"									,"modifier":3	,"point":"Frozen"		,"unlocks":"Defensive_Tree_106"},
+			{"node_id":"Defensive_Tree_105" ,"attribute":"Increases Mana by #"									,"modifier":3	,"point":"Frozen"		,"unlocks":"Defensive_Tree_106"},
 			{"node_id":"Defensive_Tree_106" ,"attribute":"Frozen enemies have a #% chance to shatter and die instantly when they unfreeze."					,"modifier":10	,"point":""		,"unlocks":""},
-			{"node_id":"Defensive_Tree_107" ,"attribute":"Increases Man by #"									,"modifier":3	,"point":"Frozen"		,"unlocks":"Defensive_Tree_108"},
+			{"node_id":"Defensive_Tree_107" ,"attribute":"Increases Mana by #"									,"modifier":3	,"point":"Frozen"		,"unlocks":"Defensive_Tree_108"},
 			{"node_id":"Defensive_Tree_108" ,"attribute":"Increases Cold Resistance by #"						,"modifier":3	,"point":"Frozen"		,"unlocks":""},
 			//Frozen req 7
 			{"node_id":"Defensive_Tree_109" ,"attribute":"Increases Cold Resistance by #"						,"modifier":5	,"point":"Frozen"		,"unlocks":"Defensive_Tree_110","Frozen":7},
@@ -366,14 +366,14 @@ var PassiveTrees=[
 			//Void req 3
 			{"node_id":"Defensive_Tree_124","attribute":"Increases Iron Skin by #" 							,"modifier":5 	,"point":"Void" 	,"unlocks":"Defensive_Tree_125","Void":3},
 			{"node_id":"Defensive_Tree_125","attribute":"Increases Chaos Resistance by #" 						,"modifier":3 	,"point":"Void" 	,"unlocks":"Defensive_Tree_126"},
-			{"node_id":"Defensive_Tree_126","attribute":"Increases Chaos Resistance by #%" 					,"modifier":3 	,"point":"Void" 	,"unlocks":"Defensive_Tree_127,Defensive_Tree_129"},
+			{"node_id":"Defensive_Tree_126","attribute":"Increases Chaos Resistance by #" 					,"modifier":3 	,"point":"Void" 	,"unlocks":"Defensive_Tree_127,Defensive_Tree_129"},
 			{"node_id":"Defensive_Tree_127","attribute":"Increases Iron Skin by #" 							,"modifier":5 	,"point":"Void" 	,"unlocks":"Defensive_Tree_128"},
-			{"node_id":"Defensive_Tree_128","attribute":"When your  HP drops below 50%  you inflict all enemies in a 1000 Radius with Delirium. Has a # Second Cooldown" ,"modifier":15 ,"point":"" ,"unlocks":""},
+			{"node_id":"Defensive_Tree_128","attribute":"When your HP drops below 50% you inflict all enemies in a 1000 Radius with Delirium. Has a # Second Cooldown" ,"modifier":15 ,"point":"" ,"unlocks":""},
 			{"node_id":"Defensive_Tree_129","attribute":"Increases Iron Skin by #" 							,"modifier":5 	,"point":"Void" 	,"unlocks":""},
 			//Void req 6
 			{"node_id":"Defensive_Tree_130","attribute":"Increases Chaos Resistance by #" 						,"modifier":5 	,"point":"Void" 	,"unlocks":"Defensive_Tree_131","Void":6},
 			{"node_id":"Defensive_Tree_131","attribute":"Increases Iron Skin by #" 							,"modifier":10 	,"point":"Void" 	,"unlocks":"Defensive_Tree_132"},
-			{"node_id":"Defensive_Tree_132","attribute":"Increases Chaos Resistanceby #" 						,"modifier":5 	,"point":"Void" 	,"unlocks":"Defensive_Tree_133"},
+			{"node_id":"Defensive_Tree_132","attribute":"Increases Chaos Resistance by #" 						,"modifier":5 	,"point":"Void" 	,"unlocks":"Defensive_Tree_133"},
 			{"node_id":"Defensive_Tree_133","attribute":"Increases Iron Skin by #" 							,"modifier":10 	,"point":"Void" 	,"unlocks":"Defensive_Tree_134"},
 			{"node_id":"Defensive_Tree_134","attribute":"You have a #% chance when hitting enemies to release a chaotic explosion at their location dealing Chaos Damage equal to half Max Iron Skin in a 300 Radius" ,"modifier":10 ,"point":"" ,"unlocks":""},
 			//Void req 9
@@ -384,31 +384,31 @@ var PassiveTrees=[
 			{"node_id":"Defensive_Tree_139","attribute":"Increases Delirium Chance by #%" 						,"modifier":5 	,"point":"" 			,"unlocks":""},
 			{"node_id":"Defensive_Tree_140","attribute":"Increases Chaos Resistance by #" 						,"modifier":10 	,"point":"Void" 	,"unlocks":""},
 			//Void req 15
-			{"node_id":"Defensive_Tree_141","attribute":"Increases Iron Skin on Hit by #" 							,"modifier":10 	,"point":"Void" 	,"unlocks":"Defensive_Tree_142","Void":15},
+			{"node_id":"Defensive_Tree_141","attribute":"Increases Iron Skin Regen by #" 							,"modifier":5 	,"point":"Void" 	,"unlocks":"Defensive_Tree_142","Void":15},
 			{"node_id":"Defensive_Tree_142","attribute":"Increases Iron Skin on Hit by #" 							,"modifier":10 	,"point":"Void" 	,"unlocks":"Defensive_Tree_143,Defensive_Tree_145"},
 			{"node_id":"Defensive_Tree_143","attribute":"Increases Iron Regen by # " 								,"modifier":5 	,"point":"Void" 	,"unlocks":"Defensive_Tree_144"},
-			{"node_id":"Defensive_Tree_144","attribute":"When hit there is a #% chance to spawn a dark fire under the player's feet that restores 10% of Max Iron Skin per second whilst stod in it. The fire last for 5  seconds, and you can only have 1 fire at once." ,"modifier":10 ,"point":"" ,"unlocks":""},
-			{"node_id":"Defensive_Tree_145","attribute":"Increases Iron Skin Regen by #" 							,"modifier":5 	,"point":"Void" 	,"unlocks":""},
+			{"node_id":"Defensive_Tree_144","attribute":"When hit there is a #% chance to spawn a dark fire under the player\'s feet that restores 10% of Max Iron Skin per second whilst stod in it. The fire last for 5 seconds, and you can only have 1 fire at once." ,"modifier":10 ,"point":"" ,"unlocks":""},
+			{"node_id":"Defensive_Tree_145","attribute":"Increases Iron Skin on Hit by #" 							,"modifier":10 	,"point":"Void" 	,"unlocks":""},
 			//Viper req 3
 			{"node_id":"Defensive_Tree_146","attribute":"Increases Defence by #" 								,"modifier":1	,"point":"Viper" 		,"unlocks":"Defensive_Tree_147","Viper":3},
-			{"node_id":"Defensive_Tree_147","attribute":"Increases Poison Resistance by #%"		 			,"modifier":3 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_148,Defensive_Tree_149"},
+			{"node_id":"Defensive_Tree_147","attribute":"Increases Poison Resistance by #"		 				,"modifier":3 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_148,Defensive_Tree_149"},
 			{"node_id":"Defensive_Tree_148","attribute":"Increases Defence by #" 								,"modifier":1 	,"point":"Viper" 		,"unlocks":""},
 			{"node_id":"Defensive_Tree_149","attribute":"Increases Defence by #" 								,"modifier":1 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_150"},
-			{"node_id":"Defensive_Tree_150","attribute":"Increases Poison Resistance by #%" 					,"modifier":3 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_151"},
+			{"node_id":"Defensive_Tree_150","attribute":"Increases Poison Resistance by #" 						,"modifier":3 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_151"},
 			{"node_id":"Defensive_Tree_151","attribute":"Increases Defence by #" 								,"modifier":1 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_152"},
 			{"node_id":"Defensive_Tree_152","attribute":"If you take damage when below 30% HP temporarily increase your Defence by 200% for # seconds" ,"modifier":3 ,"point":"" ,"unlocks":""},
 			//Viper req 6
 			{"node_id":"Defensive_Tree_153","attribute":"Increases Dodge Chance #%" 							,"modifier":1 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_154","Viper":6},
-			{"node_id":"Defensive_Tree_154","attribute":"Increases Poison Resistance #" 						,"modifier":3 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_155"},
+			{"node_id":"Defensive_Tree_154","attribute":"Increases Poison Resistance #" 						,"modifier":5 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_155"},
 			{"node_id":"Defensive_Tree_155","attribute":"Increases Dodge Chance #%" 							,"modifier":1 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_156"},
-			{"node_id":"Defensive_Tree_156","attribute":"Gain a burst of Movement Speed when you dodge. Can only have 1 stack, increases Movement Speed  by #% for 10 seconds" ,"modifier":20 ,"point":"" ,"unlocks":""},
+			{"node_id":"Defensive_Tree_156","attribute":"Gain a burst of Movement Speed when you dodge. Can only have 1 stack, increases Movement Speed by #% for 10 seconds" ,"modifier":20 ,"point":"" ,"unlocks":""},
 			//Viper req 9
-			{"node_id":"Defensive_Tree_157","attribute":"Increases Dodge Chance by #%" 						,"modifier":2 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_158","Viper":9},
+			{"node_id":"Defensive_Tree_157","attribute":"Increases Poison Resistance by #" 						,"modifier":10 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_158","Viper":9},
 			{"node_id":"Defensive_Tree_158","attribute":"Increases Defence by #" 								,"modifier":3 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_159,Defensive_Tree_160"},
-			{"node_id":"Defensive_Tree_159","attribute":"Increases Poison Resistance by #" 					,"modifier":10 	,"point":"Viper" 		,"unlocks":""},
-			{"node_id":"Defensive_Tree_160","attribute":"Increases Poison Resistance by #%"	 				,"modifier":10 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_161"},
-			{"node_id":"Defensive_Tree_161","attribute":"Increases Defence by #%" 								,"modifier":3 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_162"},
-			{"node_id":"Defensive_Tree_162","attribute":"Increases Poison Resistance by #" 					,"modifier":10 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_163"},
+			{"node_id":"Defensive_Tree_159","attribute":"Increases Dodge Chance by #%" 							,"modifier":2 	,"point":"Viper" 		,"unlocks":""},
+			{"node_id":"Defensive_Tree_160","attribute":"Increases Poison Resistance by #"	 					,"modifier":10 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_161"},
+			{"node_id":"Defensive_Tree_161","attribute":"Increases Defence by #" 								,"modifier":3 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_162"},
+			{"node_id":"Defensive_Tree_162","attribute":"Increases Poison Resistance by #" 						,"modifier":10 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_163"},
 			{"node_id":"Defensive_Tree_163","attribute":"Increases Bile Chance by #%" 							,"modifier":10 ,"point":"" ,"unlocks":""},
 			//Viper req 15
 			{"node_id":"Defensive_Tree_164","attribute":"Increases Defence by #" 								,"modifier":5 	,"point":"Viper" 		,"unlocks":"Defensive_Tree_165","Viper":15},
