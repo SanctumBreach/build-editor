@@ -334,7 +334,7 @@ function PopulatePassiveTrees(){
 		if(tree!=null){
 			for(var i=0;i<tree.Nodes.length;i++){
 				var tooltip=tree.Nodes[i].attribute.replace('#',tree.Nodes[i].modifier);
-				divs+="<div class='PassiveTreeNode' title='"+tooltip+"' id='"+tree.Nodes[i].node_id+"'>"+(i+1)+"</div>\n";				
+				divs+="<div class='PassiveTreeNode' title='"+tooltip+"\n\n"+tree.Nodes[i].point+"' id='"+tree.Nodes[i].node_id+"'>"+(i+1)+"</div>\n";				
 			}
 			//storm stuff :)
 			if(false){
