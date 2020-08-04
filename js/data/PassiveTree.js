@@ -6,13 +6,24 @@ when it comes to the order of the points for defensive it goes:Phoenix,Thunder,O
 for ultility it goes: Goblin,Oak,Rage,Cheetah,Stok,Vampire
 */
 var PassiveTrees=[
+
+//Storm req 6
+//Storm req 10
+//Bull req 6
+//Bull req 10
+//Blizzard req 7
+//Blizzard req 10
+//Corruption req 6
+//Corruption req 9
+//Decay req 6
+//Decay req 9
 	{	"Name":"Offensive Tree",
 		"Inferno":[,,,"Offensive_Tree_33",,,,"Offensive_Tree_40",,,,"Offensive_Tree_45",,,,"Offensive_Tree_52"],
-		"Blizzard":[,,,"Offensive_Tree_103",,,,"Offensive_Tree_109",,,,"Offensive_Tree_114",,,,"Offensive_Tree_120"],
-		"Bull":[,,,"Offensive_Tree_78",,,,"Offensive_Tree_85",,,,"Offensive_Tree_91",,,,"Offensive_Tree_98"],
-		"Storm":[,,,"Offensive_Tree_57",,,,"Offensive_Tree_63",,,,"Offensive_Tree_68",,,,"Offensive_Tree_73"],
-		"Corruption":[,,,"Offensive_Tree_124",,,,"Offensive_Tree_130",,,,"Offensive_Tree_135",,,,"Offensive_Tree_141"],
-		"Decay":[,,,"Offensive_Tree_146",,,,"Offensive_Tree_153",,,,"Offensive_Tree_157",,,,"Offensive_Tree_164"],
+		"Blizzard":[,,,"Offensive_Tree_103",,,,"Offensive_Tree_109",,,"Offensive_Tree_114",,,,,"Offensive_Tree_120"],
+		"Bull":[,,,"Offensive_Tree_78",,,"Offensive_Tree_85",,,,"Offensive_Tree_91",,,,,"Offensive_Tree_98"],
+		"Storm":[,,,"Offensive_Tree_57",,,,"Offensive_Tree_63",,,"Offensive_Tree_68",,,,"Offensive_Tree_73"],
+		"Corruption":[,,,"Offensive_Tree_124",,,"Offensive_Tree_130",,,"Offensive_Tree_135",,,,,,"Offensive_Tree_141"],
+		"Decay":[,,,"Offensive_Tree_146",,,"Offensive_Tree_153",,,"Offensive_Tree_157",,,,,,"Offensive_Tree_164"],
 		"Nodes":[
 			//left side
 			{"node_id":"Offensive_Tree_1" ,"attribute":"Increases Health by #"					,"modifier":10	,"point":"Decay"		,"unlocks":"Offensive_Tree_2,Offensive_Tree_9"},
