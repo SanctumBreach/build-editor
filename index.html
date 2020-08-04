@@ -5,6 +5,8 @@
 	<script src="js/data/PassiveTree.js"></script>
 	<script src="js/editor.js"></script>
 	<link rel="stylesheet" href="OffensiveTree.css">
+	<link rel="stylesheet" href="DefensiveTree.css">
+	<link rel="stylesheet" href="UtilityTree.css">
 	<link rel="stylesheet" href="Main.css">
 	<script>
 		//Make the DIV element draggagle:
@@ -56,11 +58,23 @@
 			$("#PassiveTreeContainer").toggle();
 			var containerButton = $("#toggleContainerButton");
 			if (containerButton.text() === "View Passive Tree") {
-				containerButton.text = "View masteries";
+				containerButton[0].innerHTML="View masterie";
 			} else {
-				containerButton.text = "View Passive Tree";
+				containerButton[0].innerHTML="View Passive Tree";
 			}
 		}
+		var cake;
+		function PassiveTreeSwitcher(intTab){
+			console.log(intTab);
+			//note this is ugly but I rly don't care rn			
+			for(var i=1;i<$("#PassiveTreeContainer").children().length;i++){
+				if(i==intTab)
+					$($("#PassiveTreeContainer").children()[i]).show();
+				else
+					$($("#PassiveTreeContainer").children()[i]).hide();				
+			}
+		}
+		
 		</script>
 	<script>
 		$(document).ready(function(){
@@ -90,17 +104,20 @@
 		<button id="toggleContainerButton" onclick="toggleContainer()">View Passive Tree</button>
 	</div>
 	
-	<div id="calculator" style="display:inline-block;color:white;padding-left:5px;margin-right:5px;float:left;">
+	<div id="calculator" style="display:inline-block;color:white;padding-left:5px;margin-right:5px;float:left;overflow:scroll;">
 		<span>hi no one</span>
 	</div>
 	
-	<div style="display:inline;position:relative;">
+	<div style="display:inline-block;position:relative;">
 		<div id="masteryContainer">
 			<div id="mastery" style="display:inline-block;"></div>
 			<progress id="masteryBar" style="position:absolute; left:90px;bottom:218px; width:456px;height:15px;" value="0" max="25"></progress>
 		</div>
 		<div id="PassiveTreeContainer" style="display:none;">
-			<div id="PassiveTreePoints" style="position:absolute;"></div>
+			<div style="position:absolute; z-index:1;">
+				<div id="PassiveTreePoints" style="position:absolute;"></div>
+				<div id="passiveTreeButtonSwitchContainer"><button onclick="PassiveTreeSwitcher(1)">Offensive Tree</button><button onclick="PassiveTreeSwitcher(2)">Defensive Tree</button><button onclick="PassiveTreeSwitcher(3)" disabled="disabled">Utility Tree</button></div>
+			</div>
 			<div id="OffensiveTreeContainer" style="">hi this is the offensive tree container</div>
 			<div id="DefensiveTreeContainer" style="display:none;">still not made of time message me if you want to help out</div>
 			<div id="UtilityTreeContainer" style="display:none;">Comming soon tm.</div>

@@ -1,9 +1,3 @@
-.PassiveTreeNode{
-	position:absolute;
-	border:3px solid red;
-	width:32px;
-	height:32px;
-}
 /*#region Left Tree*/
 #Offensive_Tree_1{
 	top:504px;

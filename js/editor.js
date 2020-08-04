@@ -25,6 +25,12 @@ function init(){
 	$("#Offensive_Tree_17").addClass("borderBlue");
 	$("#Offensive_Tree_25").addClass("borderBlue");
 	
+	$("#Defensive_Tree_1").addClass("borderBlue");
+	$("#Defensive_Tree_10").addClass("borderBlue");
+	$("#Defensive_Tree_17").addClass("borderBlue");
+	$("#Defensive_Tree_25").addClass("borderBlue");
+	
+	
 }
 function loadSubclass(PlayerClass){
 	var arr=classes[PlayerClass];
@@ -220,9 +226,10 @@ function cascadeUnselectPassiveTree(tree,index){
 }
 //PassiveTree part
 function PopulatePassiveTrees(){
-	var divs="";
+	
 	
 	for(var q=0;q<3;q++){
+		var divs="";
 		var tree=PassiveTrees[q];
 		//here just so I don't need to program the other 2 trees at the same time
 		if(tree!=null){
@@ -238,12 +245,13 @@ function PopulatePassiveTrees(){
 				}
 			}
 			
-			$("#OffensiveTreeContainer")[0].innerHTML=divs;		
+			$("#PassiveTreeContainer").children()[q+1].innerHTML=divs;
 			$($(".Mastery_tree")[0]).addClass("borderBlue");
 		}
 	}
 	$(".PassiveTreeNode").click(function(){		
-		var treeSelected=PassiveTrees[0];
+		
+		var treeSelected=PassiveTrees[$(this).parent().index()-1];
 		var _index=this.id.substr(treeSelected.Name.length+1);
 		var _unlocks=treeSelected.Nodes[_index-1].unlocks;
 		
@@ -275,6 +283,8 @@ function PopulatePassiveTrees(){
 	});
 }
 
+
+//code that serves no real use anymore but it saves me about 2h of frustration with css so its staying 4 now
 function exportCss(){
 	var txt="";
 	var selected=$(".PassiveTreeNode[style]");
