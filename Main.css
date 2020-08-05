@@ -93,18 +93,19 @@ progress{
 	height:42px;
 	border:3px solid red;
 	position:relative;
+	background-color:rgba(0,0,0,0.5);
 }
 
 .borderGreen{
 	border:3px solid lime;
-	background-color:rgba(0,255,0,0.3);
+	background-color:rgba(0,255,0,0.2);
 }
 .borderRed{
 	border:3px solid red;
 }
 .borderBlue{
 	border:3px solid blue;
-	background-color:rgba(0,0,255,0.3);
+	background-color:rgba(0,0,255,0.2);
 }
 .SearchSelected{
 	border:3px solid yellow;
