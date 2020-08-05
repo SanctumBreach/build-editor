@@ -102,3 +102,6 @@ progress{
 .borderBlue{
 	border:3px solid blue;
 }
+.SearchSelected{
+	border:3px solid yellow;
+}
