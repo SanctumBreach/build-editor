@@ -44,9 +44,9 @@ function executeSearch(){
 	var self=$('#searchBar')[0];	
 	$(".SearchSelected").removeClass("SearchSelected");
 	if(self.value!==null&&self.value.length>0){		
-		console.log("\"#PassiveTreeContainer [title*='"+self.value+"']\"");
-		$(".Mastery_tree[title*='"+self.value+"']").addClass("SearchSelected");
-		$("#PassiveTreeContainer [title*='"+self.value+"']").addClass("SearchSelected");
+		console.log("\"#PassiveTreeContainer [search*='"+self.value+"']\"");
+		$(".Mastery_tree[search*='"+self.value.toLowerCase()+"']").addClass("SearchSelected");
+		$("#PassiveTreeContainer [search*='"+self.value.toLowerCase()+"']").addClass("SearchSelected");
 	}
 }
 
@@ -57,18 +57,20 @@ function loadSubclass(PlayerClass){
 		addOptions+="<option>"+arr[i].Name+"</option>";
 	}
 	$("#Mastery_selector")[0].innerHTML=addOptions;
+	$('#Mastery_selector').children().tooltip();
 	
 }
 function loadMasteryTree(ClassMastery){
 	var divs="";
 	for(var i=0;i<ClassMastery.Mastery.length;i++){
 		var tooltip=ClassMastery.Mastery[i].tooltip.replace('#',ClassMastery.Mastery[i].modifier);
-		divs+="<div class='Mastery_tree' title='"+tooltip+"' id='"+ClassMastery.Mastery[i].node_id+"' style='"+ClassMastery.Mastery[i].style+"'></div>\n";
+		divs+="<div class='Mastery_tree' search='"+tooltip.toLowerCase()+"' title='"+tooltip+"' id='"+ClassMastery.Mastery[i].node_id+"' style='"+ClassMastery.Mastery[i].style+"'></div>\n";
 	}
 	
 	var ClassMastery=classes[$("#class_selector").val()][$("#Mastery_selector")[0].selectedIndex];
 	
 	$("#mastery")[0].innerHTML=divs;
+	$('#mastery').children().tooltip();
 	
 	$(".Mastery_tree").click(function(){
 		var _index=this.id.substr(ClassMastery.Name.length+1);
@@ -252,7 +254,7 @@ function PopulatePassiveTrees(){
 		if(tree!=null){
 			for(var i=0;i<tree.Nodes.length;i++){
 				var tooltip=tree.Nodes[i].attribute.replace('#',tree.Nodes[i].modifier);
-				divs+="<div class='PassiveTreeNode' title='"+tooltip+"\n\n"+tree.Nodes[i].point+"' id='"+tree.Nodes[i].node_id+"'>"+(i+1)+"</div>\n";				
+				divs+="<div class='PassiveTreeNode' search='"+tooltip.toLowerCase()+" "+tree.Nodes[i].point.toLowerCase()+"' title='"+tooltip+"&#010;&#010;"+tree.Nodes[i].point+"' id='"+tree.Nodes[i].node_id+"'>"+(i+1)+"</div>\n";				
 			}
 			//storm stuff :)
 			if(false){
@@ -261,8 +263,9 @@ function PopulatePassiveTrees(){
 					divs+="<div class='PassiveTreeNode' title='"+tooltip+"' id='Offensive_Tree_"+(i+1)+"'>"+(i+1)+"</div>\n";
 				}
 			}
-			
-			$("#PassiveTreeContainer").children()[q+1].innerHTML=divs;
+			var divcontainer=$("#PassiveTreeContainer").children()[q+1];
+			divcontainer.innerHTML=divs;
+			$(divcontainer).children().tooltip();
 			$($(".Mastery_tree")[0]).addClass("borderBlue");
 		}
 	}
@@ -332,7 +335,7 @@ function resetAllTrees(){
 }
 
 
-//code that serves no real use anymore but it saves me about 2h of frustration with css so its staying 4 now
+//code that serves no real use anymore but it saved me about 2h of frustration with css so its staying 4 now incase I need it again
 function exportCss(){
 	var txt="";
 	var selected=$(".PassiveTreeNode[style]");

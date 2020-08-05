@@ -10,12 +10,7 @@ progress{
 	background-color: transparent;
 	height:12px;
 }
-.PassiveTreeNode{
-	position:absolute;
-	border:3px solid red;
-	width:32px;
-	height:32px;
-}
+
 #statsCounter{
 	display:inline-block;
 	width:1509px;
@@ -87,20 +82,29 @@ progress{
 	height:1075px;
 	border:1px solid white;
 }
+.PassiveTreeNode{
+	position:absolute;
+	border:3px solid red;
+	width:32px;
+	height:32px;
+}
 .Mastery_tree{
 	width:40px;
 	height:42px;
 	border:3px solid red;
 	position:relative;
 }
+
 .borderGreen{
 	border:3px solid lime;
+	background-color:rgba(0,255,0,0.3);
 }
 .borderRed{
 	border:3px solid red;
 }
 .borderBlue{
 	border:3px solid blue;
+	background-color:rgba(0,0,255,0.3);
 }
 .SearchSelected{
 	border:3px solid yellow;
