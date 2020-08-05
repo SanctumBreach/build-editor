@@ -221,7 +221,7 @@ var PassiveTrees=[
 		"Void":[,,,"Defensive_Tree_124",,,"Defensive_Tree_130",,,"Defensive_Tree_135",,,,,,"Defensive_Tree_141"],
 		"Nodes":[
 			//left side
-			{"node_id":"Defensive_Tree_1" ,"attribute":"Increases Dodge Chance by #"							,"modifier":1	,"point":"Viper"		,"unlocks":"Defensive_Tree_2,Defensive_Tree_9"},
+			{"node_id":"Defensive_Tree_1" ,"attribute":"Increases Dodge Chance by #%"							,"modifier":1	,"point":"Viper"		,"unlocks":"Defensive_Tree_2,Defensive_Tree_9"},
 			{"node_id":"Defensive_Tree_2" ,"attribute":"Increases Block Chance by #%"							,"modifier":1	,"point":"Ox"			,"unlocks":"Defensive_Tree_3,Defensive_Tree_6"},
 			{"node_id":"Defensive_Tree_3" ,"attribute":"Increases Mana by #"									,"modifier":3	,"point":"Frozen"		,"unlocks":"Defensive_Tree_4"},
 			{"node_id":"Defensive_Tree_4" ,"attribute":"Increases Defence by #"								,"modifier":1	,"point":"Viper"		,"unlocks":"Defensive_Tree_5"},
