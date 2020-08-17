@@ -164,7 +164,7 @@ var classes={
 			{"node_id":"Primordial_Trickster_5", "unlocks":"Primordial_Trickster_6,Primordial_Trickster_22" 							,"style":"left:295px;top:250px"								,"modifier":"1"		,"tooltip":"Increases Electrocute Damage by #"},
 			{"node_id":"Primordial_Trickster_6", "unlocks":"Primordial_Trickster_7,Primordial_Trickster_11" 							,"style":"left:295px;top:277px"								,"modifier":"25"	,"tooltip":"Increases Lightning Damage by #%"},
 			{"node_id":"Primordial_Trickster_7", "unlocks":"Primordial_Trickster_8" 													,"style":"left:295px;top:310px"								,"modifier":"25"	,"tooltip":"Increases Fire Damage by #%"},
-			{"node_id":"Primordial_Trickster_8", "unlocks":"Primordial_Trickster_9" 													,"style":"left:224px;top:262px;"							,"modifier":"1"		,"tooltip":"Increases Electrocute by #"},
+			{"node_id":"Primordial_Trickster_8", "unlocks":"Primordial_Trickster_9" 													,"style":"left:224px;top:262px;"							,"modifier":"1"		,"tooltip":"Increases Electrocute Damage by #"},
 			{"node_id":"Primordial_Trickster_9", "unlocks":"Primordial_Trickster_10" 													,"style":"left:148px;top:217px;"							,"modifier":"25"	,"tooltip":"Increases Lightning Damage by #%"},
 			{"node_id":"Primordial_Trickster_10","unlocks":"" 				 															,"style":"left:141px;top:249px;width:50px;height:50px;"		,"modifier":""		,"tooltip":"Grant:Lightning Storm Trap"},
 			{"node_id":"Primordial_Trickster_11","unlocks":"Primordial_Trickster_12" 													,"style":"left:371px;top:30px;"								,"modifier":"1"		,"tooltip":"Increases Frostbite Damage by #"},
